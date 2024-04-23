@@ -8,6 +8,7 @@ namespace CShapeK4
         {
             Console.WriteLine("Hello K4");
             Console.ReadLine();
+            Console.WriteLine("Xin chao các bạn");
         }
     }
 }
