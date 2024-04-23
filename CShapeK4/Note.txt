@@ -1,0 +1,7 @@
+﻿
+git add --all
+git commit -m "Chú thích"
+git branch
+git push -u origin master
+
+git clone "link"
