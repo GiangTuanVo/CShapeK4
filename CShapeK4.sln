@@ -13,6 +13,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsK4", "WindowsFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeShop", "CoffeShop\CoffeShop.csproj", "{42D26C25-292B-4CA8-81C0-221C1CFA4E3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MXComponent", "MXComponent\MXComponent.csproj", "{07722C6B-796B-4B73-AAD0-FFC05CB793E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelsecFXSerial", "MelsecFXSerial\MelsecFXSerial.csproj", "{02A02A0E-6AC5-43BA-9915-09BF92AD1668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyenceSerial", "KeyenceSerial\KeyenceSerial.csproj", "{20700DEB-AD37-4413-80DE-110218FE858F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusRTU", "ModbusRTU\ModbusRTU.csproj", "{CF54ED6D-118A-4946-9DA6-4819FE96CE92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusTCP", "ModbusTCP\ModbusTCP.csproj", "{A0EC4E78-178B-4EE8-9948-BF5C8E20A638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelsecTcp", "MelsecTcp\MelsecTcp.csproj", "{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +51,30 @@ Global
 		{42D26C25-292B-4CA8-81C0-221C1CFA4E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42D26C25-292B-4CA8-81C0-221C1CFA4E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D26C25-292B-4CA8-81C0-221C1CFA4E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07722C6B-796B-4B73-AAD0-FFC05CB793E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07722C6B-796B-4B73-AAD0-FFC05CB793E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07722C6B-796B-4B73-AAD0-FFC05CB793E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07722C6B-796B-4B73-AAD0-FFC05CB793E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A02A0E-6AC5-43BA-9915-09BF92AD1668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A02A0E-6AC5-43BA-9915-09BF92AD1668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A02A0E-6AC5-43BA-9915-09BF92AD1668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A02A0E-6AC5-43BA-9915-09BF92AD1668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20700DEB-AD37-4413-80DE-110218FE858F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20700DEB-AD37-4413-80DE-110218FE858F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20700DEB-AD37-4413-80DE-110218FE858F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20700DEB-AD37-4413-80DE-110218FE858F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF54ED6D-118A-4946-9DA6-4819FE96CE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF54ED6D-118A-4946-9DA6-4819FE96CE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF54ED6D-118A-4946-9DA6-4819FE96CE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF54ED6D-118A-4946-9DA6-4819FE96CE92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0EC4E78-178B-4EE8-9948-BF5C8E20A638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0EC4E78-178B-4EE8-9948-BF5C8E20A638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0EC4E78-178B-4EE8-9948-BF5C8E20A638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0EC4E78-178B-4EE8-9948-BF5C8E20A638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
