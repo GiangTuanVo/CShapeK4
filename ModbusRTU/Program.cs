@@ -16,7 +16,7 @@ namespace ModbusRTU
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Sample());
+            Application.Run(new ModbusRTU());
         }
     }
 }

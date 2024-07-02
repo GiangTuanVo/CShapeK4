@@ -1,5 +1,5 @@
 ﻿
-namespace MelsecTcp
+namespace KeyenceTcp
 {
     partial class Sample
     {
@@ -293,7 +293,7 @@ namespace MelsecTcp
             this.button4.TabIndex = 8;
             this.button4.Text = "Plc Type";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_ClickAsync);
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -341,7 +341,7 @@ namespace MelsecTcp
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(71, 23);
             this.textBox6.TabIndex = 5;
-            this.textBox6.Text = "D100";
+            this.textBox6.Text = "DM100";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
@@ -386,7 +386,7 @@ namespace MelsecTcp
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(58, 23);
             this.textBox2.TabIndex = 38;
-            this.textBox2.Text = "1000";
+            this.textBox2.Text = "8501";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
@@ -395,7 +395,7 @@ namespace MelsecTcp
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(145, 23);
             this.textBox1.TabIndex = 34;
-            this.textBox1.Text = "192.168.1.3";
+            this.textBox1.Text = "192.168.1.5";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26

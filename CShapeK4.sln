@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusTCP", "ModbusTCP\Modb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelsecTcp", "MelsecTcp\MelsecTcp.csproj", "{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyenceTcp", "KeyenceTcp\KeyenceTcp.csproj", "{63D750EA-D625-4728-972E-A549CFF06CCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF50FC14-E7A7-46CC-AF8E-40F084816AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D750EA-D625-4728-972E-A549CFF06CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D750EA-D625-4728-972E-A549CFF06CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D750EA-D625-4728-972E-A549CFF06CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D750EA-D625-4728-972E-A549CFF06CCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
