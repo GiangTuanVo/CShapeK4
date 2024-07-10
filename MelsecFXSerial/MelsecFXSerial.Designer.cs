@@ -49,6 +49,8 @@ namespace MelsecFXSerial
             this.label6 = new System.Windows.Forms.Label();
             this.btnRead = new System.Windows.Forms.Button();
             this.btnWrite = new System.Windows.Forms.Button();
+            this.writeAsync = new System.Windows.Forms.Button();
+            this.readAsync = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbPort
@@ -236,11 +238,33 @@ namespace MelsecFXSerial
             this.btnWrite.UseVisualStyleBackColor = true;
             this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
+            // writeAsync
+            // 
+            this.writeAsync.Location = new System.Drawing.Point(12, 271);
+            this.writeAsync.Name = "writeAsync";
+            this.writeAsync.Size = new System.Drawing.Size(108, 44);
+            this.writeAsync.TabIndex = 10;
+            this.writeAsync.Text = "WriteAsync";
+            this.writeAsync.UseVisualStyleBackColor = true;
+            this.writeAsync.Click += new System.EventHandler(this.writeAsync_ClickAsync);
+            // 
+            // readAsync
+            // 
+            this.readAsync.Location = new System.Drawing.Point(12, 321);
+            this.readAsync.Name = "readAsync";
+            this.readAsync.Size = new System.Drawing.Size(108, 44);
+            this.readAsync.TabIndex = 10;
+            this.readAsync.Text = "ReadAsync";
+            this.readAsync.UseVisualStyleBackColor = true;
+            this.readAsync.Click += new System.EventHandler(this.readAsync_Click);
+            // 
             // MelsecFXSerial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 494);
+            this.Controls.Add(this.readAsync);
+            this.Controls.Add(this.writeAsync);
             this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.btnRead);
             this.Controls.Add(this.txtResult);
@@ -292,6 +316,8 @@ namespace MelsecFXSerial
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnRead;
         private System.Windows.Forms.Button btnWrite;
+        private System.Windows.Forms.Button writeAsync;
+        private System.Windows.Forms.Button readAsync;
     }
 }
 

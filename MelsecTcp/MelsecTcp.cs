@@ -99,6 +99,7 @@ namespace MelsecTcp
                     break;
                 case "Int32":
                     Int32[] int32 = mcNet.ReadInt32(txtAddr.Text, ushort.Parse(txtLength.Text)).Content;
+                    mcNet.ReadInt16Async(txtAddr.Text, ushort.Parse(txtLength.Text));
                     int num32 = int.Parse(txtAddr.Text.Substring(1, txtAddr.Text.Length - 1));
                     string text32 = txtAddr.Text.Substring(0, 1);
                     for (int i = 0; i < int32.Length; i++)

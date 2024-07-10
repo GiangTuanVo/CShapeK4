@@ -4,6 +4,7 @@ using System.IO.Ports;
 using LibConnection;
 using LibConnection.Profinet.Melsec;
 using System;
+using System.Threading.Tasks;
 
 namespace MelsecFXSerial
 {
@@ -87,7 +88,7 @@ namespace MelsecFXSerial
             {
                 case "Int16":
                     Int16[] int16 = FxSerial.ReadInt16(txtAddr.Text, ushort.Parse(txtLength.Text)).Content;
-                    int num16 = int.Parse(txtAddr.Text.Substring(1, txtAddr.Text.Length-1));
+                    int num16 = int.Parse(txtAddr.Text.Substring(1, txtAddr.Text.Length - 1));
                     string text16 = txtAddr.Text.Substring(0, 1);
                     for (int i = 0; i < int16.Length; i++)
                     {
@@ -102,7 +103,7 @@ namespace MelsecFXSerial
                     for (int i = 0; i < int32.Length; i++)
                     {
                         txtResult.AppendText($"[{text32}{num32}] = {int32[i]}\r\n");
-                        num32+=2;
+                        num32 += 2;
                     }
                     break;
                 case "Int64":
@@ -114,7 +115,7 @@ namespace MelsecFXSerial
                     for (int i = 0; i < f_val.Length; i++)
                     {
                         txtResult.AppendText($"[{text_f}{num_f}] = {f_val[i]}\r\n");
-                        num_f+=2;
+                        num_f += 2;
                     }
                     break;
                 case "Double":
@@ -164,6 +165,23 @@ namespace MelsecFXSerial
                 default:
                     break;
             }
+        }
+
+        private async void writeAsync_ClickAsync(object sender, EventArgs e)
+        {
+            await Task.Run(async () =>
+            {
+                await FxSerial.WriteAsync("D0", 12.5f);
+            });
+        }
+
+        private async void readAsync_Click(object sender, EventArgs e)
+        {
+            await Task.Run(async () =>
+            {
+                OperateResult<float> val = await FxSerial.ReadFloatAsync("D0");
+                MessageBox.Show($"Value = {val.Content}");
+            });
         }
     }
 }
